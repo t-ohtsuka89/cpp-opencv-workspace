@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "externalConsole": false,
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "moduleLoad": false,
+                "trace": true
+            },
+            "showDisplayString": true,
+            "preLaunchTask": "C/C++: gcc アクティブなファイルのビルド",
+            "stopAtEntry": false,
+        }
+    ]
+}
