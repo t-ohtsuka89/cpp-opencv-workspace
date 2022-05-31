@@ -3,9 +3,11 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc アクティブなファイルのビルド",
-            "command": "/usr/bin/gcc",
+            "command": "/usr/bin/g++",
             "args": [
                 "-fdiagnostics-color=always",
+                // target file
+                "${file}",
                 // add info for debug
                 "-g",
                 // output filename
@@ -14,9 +16,10 @@
                 // opencv libs
                 "-I/usr/local/include/opencv4/opencv2",
                 "-I/usr/local/include/opencv4",
-                "-L/usr/local/lib -lopencv_highgui -lopencv_imgcodecs -lopencv_core",
-                // target file
-                "${file}",
+                "-L/usr/local/lib",
+                "-lopencv_highgui",
+                "-lopencv_imgcodecs",
+                "-lopencv_core",
             ],
             "options": {
                 "cwd": "${fileDirname}"
