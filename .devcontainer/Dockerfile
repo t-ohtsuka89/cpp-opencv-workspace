@@ -31,3 +31,4 @@ RUN cd /tmp/opencv \
     && make install \
     && rm -rf /tmp/opencv
 
+ENV LD_LIBRARY_PATH /usr/local/lib:${LD_LIBRARY_PATH}
